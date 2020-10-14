@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <title>Navigation</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header" id="header">
+            <figure class="header__logo">
+                <img src="./img/logo.png" alt="logotype named logo">
+            </figure>
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-link">one</a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="#">item1</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#">item2</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#">item3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-link">two</a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="#">item1</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#">item2</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#">item3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-link">three</a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="#">item1</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#">item2</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#">item3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="btn-wrapper">
+                    <button type="button" class="login">login</button>
+                    <button type="button" class="singUp">sing up</button>
+                </div>
+                <nav class="header__nav-mob">
+                    <input id="toggle" class="menu__toggle" type="checkbox">
+                    <label for="toggle" class="menu__btn">
+                        <span class="menu__span"></span>
+                    </label>
+
+                    <ul class="nav__list-mob">
+                        <li class="nav__item-mob" id="nav-item-mob">
+                            <div class="wrapper">
+                                <img class="user-img" id="user-img" src="./img/user-8-16.png" alt="user">
+                                <a class="nav__link-mob" href="#">One</a>
+                            </div>
+                             <button
+                             type="button" 
+                             class="plus"
+                             onclick="toggleSubmenuTree(this)"></button>
+                        </li>
+                        <ul class="submenu-mob-list visible" id="toggled-visibility-one">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        <li class="nav__item-mob" id="nav-item-mob-two">
+                            <div class="wrapper">
+                                <img class="user-img" id="img-two" src="./img/planner-16.png" alt="image">
+                                
+                                <a class="nav__link-mob" href="#">Two</a>
+                            </div>
+
+                            <button
+                             type="button" 
+                             class="plus"
+                             onclick="toggleSubmenuTree(this)"></button>
+                        </li>
+                        <ul class="submenu-mob-list visible" id="toggled-visibility-two">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        <li class="nav__item-mob" id="nav-item-mob-three">
+                            <div class="wrapper">
+                                <img class="user-img" id="img-build" src="./img/bank-3-16.png" alt="building">
+                                <a class="nav__link-mob" href="#">Three</a>
+                            </div>
+
+                            <button
+                             type="button" 
+                             class="plus"
+                             onclick="toggleSubmenuTree(this)"></button>
+                        </li>
+                        <ul class="submenu-mob-list visible" id="toggled-visibility-three">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+   
+    <script src="./index.js"></script>
+</body>
+
+</html>
